@@ -19,24 +19,24 @@ Note that the data received from this microservice will be a string of a list. I
 
 See below for an example code to establish connection, to call/send data to the microservice, and to receive data from the microservices.
 
-## sample code to connect, call, receive from this microservice
-import socket
-
-def main():
-    # Establish connection with vg_recommender_ms (microservice)
-    proxy_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-    proxy_socket.connect(('localhost', 8888))
-
-    # To call and send data to vg_recommender_ms (microservice)
-    data = "['simulation', '10', ['Xbox', 'Playstation']]"
-    proxy_socket.send(data.encode())
-
-    # To receive result from vg_recommender_ms (microservice)
-    result = proxy_socket.recv(1024).decode()
-    print(result)
-
-    # Close the connection
-    proxy_socket.close()
-
-if __name__ == "__main__":
-    main()
+#Sample code to connect, call, receive from this microservice
+    import socket
+    
+    def main():
+        # Establish connection with vg_recommender_ms (microservice)
+        proxy_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+        proxy_socket.connect(('localhost', 8888))
+    
+        # To call and send data to vg_recommender_ms (microservice)
+        data = "['simulation', '10', ['Xbox', 'Playstation']]"
+        proxy_socket.send(data.encode())
+    
+        # To receive result from vg_recommender_ms (microservice)
+        result = proxy_socket.recv(1024).decode()
+        print(result)
+    
+        # Close the connection
+        proxy_socket.close()
+    
+    if __name__ == "__main__":
+        main()
