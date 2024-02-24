@@ -8,14 +8,14 @@ Calling and sending data to this microservice can be accomplished by this code:
     data = "['GENRE', 'LENGTH', ['LIST OF PLATFORM(S)']]"
     proxy_socket.send(data.encode())
 
-Note that the data sent to this microservice needs to be a string of a list. In the list are 3 elements with the following data and in order of: genre, length, and list of platform(s). All elements should be a string.
+Note that the data sent to this microservice needs to be a string of a list. In the list are 3 elements with the following data and in order of: genre, length, and list of platform(s). GENRE and LENGTH are strings. LIST OF PLATFORM(S) is a list.
 
 Receiving result from the microservice can be accomplished by this code:
 # To receive result from vg_recommender_ms (microservice)
     result = proxy_socket.recv(1024).decode()
     print(result)
 
-Note that the data received from this microservice will be a string of a list. In the list are 5 elements with following the data and order in order of: videogame title, cost, length, platform, and image name. All elements will be a string.
+Note that the data received from this microservice will be a string of a list. In the list are 5 elements with following the data and order in order of: VIDEOGAME TITLE, COST, LENGTH, LIST OF PLATFORM(S), and IMAGE NAME. VIDEOGAME TITLE, COST, LENGTH, and IMAGE NAME are strings. LIST OF PLATFORM(S) is a list.
 
 See below for an example code to establish connection, to call/send data to the microservice, and to receive data from the microservices.
 
