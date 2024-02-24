@@ -1,2 +1,43 @@
 # cs361_vg_recommender_ms
-Microservice that receives string from videogame recomender webapp, determines which videogame to recommend, and returns a string of the videogame and its details.
+This microservice waits for a call from the videogame recommender web app. This call must pass a string that contains genre, length, and platform(s) selected by the web app. This microservice will then return a string of a list of videogame title, cost, length, platform, and image name. 
+
+Connection to this microservice can be achieved by using socket.
+
+Calling and sending data to this microservice can be accomplished by this code:
+# To call and send data to vg_recommender_ms (microservice)
+    data = "['GENRE', 'LENGTH', ['LIST OF PLATFORM(S)']]"
+    proxy_socket.send(data.encode())
+
+Note that the data sent to this microservice needs to be a string of a list. In the list are 3 elements with the following data and order: genre, length, and list of platform(s).
+
+Receiving result from the microservice can be accomplished by this code:
+# To receive result from vg_recommender_ms (microservice)
+    result = proxy_socket.recv(1024).decode()
+    print(result)
+
+Note that the data received from this microservice will be a string of a list. In the list are 5 elements in with following data and order: videogame title, cost, length, platform, and image name.
+
+See below for an example code to establish connection, to call/send data this microservice, and receive data from this microservices.
+
+~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*
+
+import socket
+
+def main():
+    # Establish connection with vg_recommender_ms (microservice)
+    proxy_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+    proxy_socket.connect(('localhost', 8888))
+
+    # To call and send data to vg_recommender_ms (microservice)
+    data = "['simulation', '10', ['Xbox', 'Playstation']]"
+    proxy_socket.send(data.encode())
+
+    # To receive result from vg_recommender_ms (microservice)
+    result = proxy_socket.recv(1024).decode()
+    print(result)
+
+    # Close the connection
+    proxy_socket.close()
+
+if __name__ == "__main__":
+    main()
