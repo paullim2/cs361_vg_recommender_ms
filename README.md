@@ -15,7 +15,7 @@ Receiving result from the microservice can be accomplished by this code:
     result = proxy_socket.recv(1024).decode()
     print(result)
 
-Note that the data received from this microservice will be a string of a list. In the list are 5 elements with following the data and order in order of: VIDEOGAME TITLE, COST, LENGTH, LIST OF PLATFORM(S), and IMAGE NAME. VIDEOGAME TITLE, COST, LENGTH, and IMAGE NAME are strings. LIST OF PLATFORM(S) is a list.
+Note that the data received from this microservice will be a string of a list. In the list are 5 elements with following the data and order of: VIDEOGAME TITLE, COST, LENGTH, LIST OF PLATFORM(S), and IMAGE NAME. VIDEOGAME TITLE, COST, LENGTH, and IMAGE NAME are strings. LIST OF PLATFORM(S) is a list.
 
 See below for an example code to establish connection, to call/send data to the microservice, and to receive data from the microservices.
 
