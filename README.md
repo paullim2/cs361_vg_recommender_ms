@@ -8,7 +8,7 @@ Calling and sending data to this microservice can be accomplished by this code:
     data = "['GENRE', 'LENGTH', ['LIST OF PLATFORM(S)']]"
     proxy_socket.send(data.encode())
 
-Note that the data sent to this microservice needs to be a string of a list. In the list are 3 elements with the following data and in order of: genre, length, and list of platform(s). GENRE and LENGTH are strings. LIST OF PLATFORM(S) is a list.
+Note that the data sent to this microservice needs to be a string of a list. In the list are 3 elements with the following data and in order of: GENRE, LENGTH, and LIST OF PLATFORM(S). GENRE and LENGTH are strings. LIST OF PLATFORM(S) is a list.
 
 Receiving result from the microservice can be accomplished by this code:
 # To receive result from vg_recommender_ms (microservice)
