@@ -19,7 +19,7 @@ Note that the data received from this microservice will be a string of a list. I
 
 See below for an example code to establish connection, to call/send data to the microservice, and to receive data from the microservices.
 
-#Sample code to connect, call, receive from this microservice
+# Sample code to connect, call, receive from this microservice
     import socket
     
     def main():
