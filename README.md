@@ -3,13 +3,13 @@ This microservice waits for a call from the videogame recommender web app. The c
 
 Connection to the microservice can be achieved by using socket.
 
-Calling and sending data to this microservice can be modeled after this code:
+# Calling and sending data to this microservice can be modeled after this code:
     data = "['GENRE', 'LENGTH', ['LIST OF PLATFORM(S)']]"
     proxy_socket.send(data.encode())
 
 Note that the data sent to this microservice needs to be a string of a list. In the list are 3 elements with the following data and in order of: GENRE, LENGTH, and LIST OF PLATFORM(S). GENRE and LENGTH are strings. LIST OF PLATFORM(S) is a list.
 
-Receiving result from the microservice can be modeled after this code:
+# Receiving result from the microservice can be modeled after this code:
     result = proxy_socket.recv(1024).decode()
     print(result)
 
