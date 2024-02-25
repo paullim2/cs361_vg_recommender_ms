@@ -4,6 +4,9 @@ This microservice waits for a call from the videogame recommender web app. The c
 Connection to the microservice can be achieved by using Flask.
 
 # Calling and sending data to this microservice can be modeled after this code:
+    # string holds data from web app submission
+    string_of_preference = "['rpg', '35', ['Xbox', 'Playstation']]"
+    
     # function to send data and request data back from microservice
     def send_string_to_microservice(string_of_preference):
         url = "http://localhost:5001/display_game"
