@@ -3,6 +3,7 @@
 2. Install Flask from your Python library.
 3. Open the microservice file, and under 'def index()', change HTML string to be equal to your HTML file name. Save.
 4. Run 'vg_recommender_microservice.py'.
+5. Open http://localhost:8000
 
 # Communication Contract
 ## Requesting Data from the Microservice
