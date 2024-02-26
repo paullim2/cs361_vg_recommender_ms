@@ -10,7 +10,7 @@
 1. In your HTML file in the same tag of your forms to select genre, length, and platform(s) preferences, add the following:
    action="/submit" method="post"
 
-   An example tag could be: &lt;form id="gameForm" action="/submit" method="post"&gt;
+   An example tag (and by proxy examle call) could be: &lt;form id="gameForm" action="/submit" method="post"&gt;
 
    Now when the user selects their videogame preferences and hits submit, these values will be passed to the Flask endpoint /submit. 
 
