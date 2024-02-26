@@ -11,7 +11,7 @@
    action="/submit" method="post"
 
 ## Receiving Data from the Microservice
-1. In the JavaScript portion of your HTML, define the following elements as so:
+1. In the JavaScript portion of your HTML, define the following elements in your fetch command:
       * url = '/submit'
       * method = 'POST'
 2. A valid response looks like: ['Stardew Valley', '15', '100+', ['Nintendo Switch', 'Playstation', 'Xbox', 'PC', 'Mobile'], 'stardew.jpg']
