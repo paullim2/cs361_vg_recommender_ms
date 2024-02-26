@@ -12,6 +12,8 @@
 
    An example tag could be: &lt;form id="gameForm" action="/submit" method="post"&gt;
 
+   Now when the user selects their videogame preferences and hits submit, these values will be passed to the Flask endpoint. 
+
 ## Receiving Data from the Microservice
 1. In the JavaScript portion of your HTML, define the following elements in your fetch command:
       * url = '/submit'
