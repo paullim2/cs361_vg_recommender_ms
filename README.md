@@ -7,8 +7,11 @@
 
 # Communication Contract
 ## Requesting Data from the Microservice
-1. In your HTML file in the form box(es) to select videogame preferences, add the following:
-   action="submit" method="post"
+1. In your HTML file in the same tag of your forms to select genre, length, and platform(s) preferences, add the following:
+   action="/submit" method="post"
 
 ## Receiving Data from the Microservice
-1. A valid response looks like: ['Stardew Valley', '15', '100+', ['Nintendo Switch', 'Playstation', 'Xbox', 'PC', 'Mobile'], 'stardew.jpg']
+1. In the JavaScript portion of your HTML, define the following elements as so:
+      * url = '/submit'
+      * method = 'POST'
+2. A valid response looks like: ['Stardew Valley', '15', '100+', ['Nintendo Switch', 'Playstation', 'Xbox', 'PC', 'Mobile'], 'stardew.jpg']
