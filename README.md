@@ -7,7 +7,7 @@
 
 # Communication Contract
 ## Requesting Data from the Microservice
-1. In your HTML file in the same tag of your forms to select genre, length, and platform(s) preferences, add the following:
+1. In your webapp file in the same tag of your forms to select genre, length, and platform(s) preferences, add the following:
    action="/submit" method="post"
 
    An example tag (and by proxy example call) could be: &lt;form id="gameForm" action="/submit" method="post"&gt;
