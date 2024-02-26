@@ -10,6 +10,8 @@
 1. In your HTML file in the same tag of your forms to select genre, length, and platform(s) preferences, add the following:
    action="/submit" method="post"
 
+   An example tag could be: <form id="gameForm" action="/submit" method="post">
+
 ## Receiving Data from the Microservice
 1. In the JavaScript portion of your HTML, define the following elements in your fetch command:
       * url = '/submit'
