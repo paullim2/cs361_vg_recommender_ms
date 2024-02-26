@@ -18,6 +18,7 @@
 1. In the JavaScript portion of your HTML, define the following elements in your fetch command:
       * url = '/submit'
       * method = 'POST'
-2. A valid response looks like: ['Stardew Valley', '15', '100+', ['Nintendo Switch', 'Playstation', 'Xbox', 'PC', 'Mobile'], 'stardew.jpg']
+2. The response comes in this format: ['title', 'cost', 'length', ['platform 1', 'platform 2', ...], 'image name']
+      * An example is: ['Stardew Valley', '15', '100+', ['Nintendo Switch', 'Playstation', 'Xbox', 'PC', 'Mobile'], 'stardew.jpg']
 
 ## UML Diagram
