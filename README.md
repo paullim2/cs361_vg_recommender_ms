@@ -15,3 +15,5 @@
       * url = '/submit'
       * method = 'POST'
 2. A valid response looks like: ['Stardew Valley', '15', '100+', ['Nintendo Switch', 'Playstation', 'Xbox', 'PC', 'Mobile'], 'stardew.jpg']
+
+## UML Diagram
