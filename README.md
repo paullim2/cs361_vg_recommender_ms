@@ -22,4 +22,4 @@
       * An example is: ['Stardew Valley', '15', '100+', ['Nintendo Switch', 'Playstation', 'Xbox', 'PC', 'Mobile'], 'stardew.jpg']
 
 ## UML Diagram
-<img width="495" alt="VG Recommender UML" src="https://github.com/paullim2/cs361_vg_recommender_ms/assets/129928704/cd8812a4-e87d-47db-8b73-dfaa9645fe9e">
+<img width="507" alt="Screenshot 2024-02-26 at 4 08 12 PM" src="https://github.com/paullim2/cs361_vg_recommender_ms/assets/129928704/8cedd3a1-8d70-4e6a-acf0-91981edf14f9">
