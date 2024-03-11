@@ -1,4 +1,5 @@
 from flask import Flask, request
+from flask_cors import CORS
 
 # dictionary of games data
 games = [
@@ -29,10 +30,8 @@ def recommend_game(input):
             return "No Match Found"
     return "No Match Found"
 
-
-
-
 app = Flask(__name__)
+CORS(app)
 
 @app.route('/')
 def index():
